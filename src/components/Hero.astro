@@ -1,10 +1,16 @@
 ---
+
 ---
+
+
+
+
 <div>
     <img class="headerstor" src="img/headerstor.webp" alt="headerstor">
     <img class="headerlille" src="img/headerlille.webp" alt="headerlille">
-    <a class="blevfrivillig" href="#formbody">BLIV FRIVILLIG</a>
-    <a class="blevfrivilliglille" href="#formbody">BLIV FRIVILLIG</a>
+    <h1 class="rådgiver">ER DU VORES NYE RÅDGIVER?</h1>
+    <a class="blivfrivillig" href="#formbody">BLIV FRIVILLIG</a>
+    <a class="blivfrivilliglille" href="#formbody">BLIV FRIVILLIG</a>
 </div>
 
 <style>
@@ -12,14 +18,27 @@ img{
 width: 100%;
 height: auto;
 }
+a{
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.rådgiver{
+    position: absolute;
+    top: 20vw; 
+    left: 50vw; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    max-width: 450px;
+    color: #FCF7EC;
+}
 
 .headerlille{
     height: 110vw;
     object-fit: cover;
 }
-.blevfrivillig {
+.blivfrivillig {
     position: absolute; 
-    top: 32vw; 
+    top: 37vw; 
     left: 50vw; 
     transform: translate(-50%, -50%); 
     background-color: #60C5BB;
@@ -28,7 +47,7 @@ height: auto;
     border-radius: 8px;
    text-decoration: dashed;
 }
-.blevfrivilliglille{
+.blivfrivilliglille{
     position: absolute; 
     top: 90vw; 
     left: 50vw; 
@@ -39,20 +58,38 @@ height: auto;
     border-radius: 8px;
    text-decoration: dashed;  
 }
-@media (max-width: 800px) {
+.blivfrivillig:hover,
+.blivfrivilliglille:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: transform 0.2s ease-in-out; 
+}
+
+@media (max-width: 600px) {
   .headerstor {
     display: none;
   }
-  .blevfrivillig{
+  .blivfrivillig{
     display: none;
   }
+  .rådgiver{
+    top: 50vw;
+  }
 }
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .headerlille {
     display: none;
   }
-  .blevfrivilliglille{
+  .blivfrivilliglille{
     display: none;
   }
+
 }
+@media (min-width: 600px) and (max-width: 1000px) {
+  .rådgiver {
+    font-size: 2.5rem;
+    top: 22vw;
+  }
+}
+
+
 </style>
