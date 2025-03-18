@@ -2,7 +2,9 @@
 ---
 <div>
     <img class="headerstor" src="img/headerstor.webp" alt="headerstor">
-    <a class="blevfrivillig" href="#">BLEV FRIVILLIG</a>
+    <img class="headerlille" src="img/headerlille.webp" alt="headerlille">
+    <a class="blevfrivillig" href="">BLIV FRIVILLIG</a>
+    <a class="blevfrivilliglille" href="">BLIV FRIVILLIG</a>
 </div>
 
 <style>
@@ -10,6 +12,7 @@ img{
 width: 100%;
 height: auto;
 }
+
 
 .blevfrivillig {
     position: absolute; 
@@ -22,7 +25,32 @@ height: auto;
     border-radius: 8px;
    text-decoration: dashed;
 }
-
-
+.blevfrivilliglille{
+    position: absolute; 
+    top: 100vw; 
+    left: 50vw; 
+    transform: translate(-50%, -50%); 
+    background-color: #60C5BB;
+    color: rgb(0, 0, 0);
+    padding: 8px 14px;
+    border-radius: 8px;
+   text-decoration: dashed;  
+}
+@media (max-width: 800px) {
+  .headerstor {
+    display: none;
+  }
+  .blevfrivillig{
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .headerlille {
+    display: none;
+  }
+  .blevfrivilliglille{
+    display: none;
+  }
+}
 
 </style>
