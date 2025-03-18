@@ -3,7 +3,10 @@
 ---
 
 <div class="footer">
+    <div class="flex">
 <h2>KONTAKT</h2>
+<img class="logo" src="img/logo2.svg" alt="">
+</div>
     <div class="line"></div>
 <div class="grid_1-1-1">
 <div class="grid1">
@@ -25,11 +28,19 @@
     <p>34353476</p>
 </div>
 </div>
+<img class="logo2" src="img/logo2.svg" alt="">
 </div>
 
 <style>
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex h2 {
+align-self: flex-end;
+    }
     .footer {
-        padding: 20px 20px 50px 0px;
+        padding: 100px 20px 50px 0px;
         background-color: #231F20;
         color: #FCF7EC;
         margin-top: 50px;
@@ -46,10 +57,17 @@
     .noshow {
         display: none;
     }
+
+    .logo2 {
+        display: none;
+    }
     @media screen and (max-width: 800px) {
     .grid_1-1-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+        display: none;
     }
     .line {
         background-color: #FCF7EC;
@@ -65,9 +83,24 @@
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
+    .logo2 {
+        display: block;
+        position: relative;
+        left: 60%;
+
+    }
     }
 h2, h3, p {
 padding-left: 20px;
 padding-right: 20px;
+}
+
+h3 {
+    margin-bottom: 20px ;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 </style>
