@@ -1,0 +1,71 @@
+---
+
+---
+
+<div class="footer">
+<h2>KONTAKT</h2>
+    <div class="line"></div>
+<div class="grid_1-1-1">
+<div class="grid1">
+<h3>SOCIALS</h3>
+<p>MP_INSTERGRAM</p>
+<p>MP_FACEBOOK</p>
+<p>MP_LINKTIN</p>
+</div>
+<div class="grid2">
+    <div class="line noshow"></div>
+    <h3>EMAIL</h3>
+    <p>MPHH@gmail.com</p>
+    <p>hhfh@gmail.com</p>
+</div>
+<div class="grid3">
+    <div class="line noshow"></div>
+    <h3>TELEFON</h3>
+    <p>34353476</p>
+    <p>34353476</p>
+</div>
+</div>
+</div>
+
+<style>
+    .footer {
+        padding: 20px 20px 50px 0px;
+        background-color: #231F20;
+        color: #FCF7EC;
+    }
+    .line {
+        background-color: #FCF7EC;
+        padding: 15px 70vw 0px 0px;
+        display: inline-block;
+    }
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .noshow {
+        display: none;
+    }
+    @media screen and (max-width: 800px) {
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .line {
+        background-color: #FCF7EC;
+        padding: 15px 50vw 0px 0px;
+        display: inline-block;
+    }
+    .grid2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+       justify-items: end;
+    }
+    .grid3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    }
+h2, h3, p {
+padding-left: 20px;
+}
+</style>
