@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary: #faf7ed;
+  --secondary: #000000;
+  --accent: #60c5bb;
+
+}
+
+body {
+  background-color: #faf7ed;
+}
