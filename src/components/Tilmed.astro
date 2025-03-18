@@ -1,0 +1,97 @@
+---
+
+---
+
+<div class="formbody">
+<form action="#" method="post" enctype="multipart/form-data">
+            <label for="fornavn">FOR - OG MELLEMNAVN</label>
+            <input type="text" id="fornavn" name="fornavn" required>
+
+            <label for="efternavn">EFTERNAVN</label>
+            <input type="text" id="efternavn" name="efternavn" required>
+
+            <label for="fødselsdag">FØDSELSDAG DATO</label>
+            <input type="date" id="fødselsdag" name="fødselsdag" required>
+
+            <label for="adresse">ADRESSE</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="fil">TILFØJ FIL...</label>
+            <input type="file" id="fil" name="fil">
+
+            <label for="øvrige">ØVRIGE</label>
+            <textarea id="øvrige" name="øvrige" rows="4"></textarea>
+
+            <button type="submit">SEND</button>
+        </form>
+</div>
+
+
+<style>
+
+.formbody{
+font-family: Arial, sans-serif;
+    background-color: #faf7ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+input[type="file"] {
+    background: #f8f8f8;
+    padding: 5px;
+}
+
+button {
+    background-color: #83c5be;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5a9c91;
+}
+
+
+
+
+</style>
